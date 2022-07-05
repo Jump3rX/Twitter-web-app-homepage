@@ -1,0 +1,468 @@
+@import url("https://fonts.googleapis.com/css2?family=Gantari:wght@300&display=swap");
+body {
+  margin-left: 300px;
+  padding-top: 60px;
+  font-family: "Gantari", sans-serif;
+  background-color: rgb(21, 32, 43);
+}
+
+.side-nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  background-color: rgb(21, 32, 43);
+  height: 100vh;
+  font-size: 22px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-links {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  transition: background-color 0.2s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.top-links:hover {
+  background-color: rgba(247, 249, 249, 0.1);
+}
+#nav-tweet-btn {
+  width: 200px;
+  background-color: rgb(29, 155, 240);
+  border-radius: 28px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+}
+.logo {
+  width: 30px;
+}
+
+.home-icon {
+  width: 30px;
+  padding-right: 10px;
+}
+.explore-icon {
+  width: 30px;
+  padding-right: 10px;
+}
+.notification-icon {
+  width: 30px;
+  padding-right: 10px;
+}
+.messages-icon {
+  width: 30px;
+  padding-right: 10px;
+}
+.lists-icon {
+  width: 30px;
+  padding-right: 10px;
+}
+.profile-icon {
+  width: 30px;
+  padding-right: 10px;
+}
+.more-icon {
+  width: 30px;
+  padding-right: 10px;
+}
+
+.bookmarks-icon {
+  width: 30px;
+  padding-right: 10px;
+}
+.round-profile-image {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.profile-img {
+  width: auto;
+  height: 100%;
+  object-fit: ;
+}
+.bottom-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  margin-top: 95px;
+  padding: 10px;
+  border-radius: 25px;
+  transition: background-color 0.15s;
+}
+.bottom-link:hover {
+  background-color: rgba(247, 249, 249, 0.1);
+}
+.profile-names {
+  padding-left: 8px;
+}
+.profile-name {
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+}
+.profile-username {
+  color: rgb(117, 130, 143);
+  font-size: 15px;
+}
+.profile-more-icon {
+  width: 20px;
+  margin-left: 15px;
+}
+.top-heading {
+  position: fixed;
+  top: 0;
+  width: 80%;
+  z-index: 1;
+  background-color: rgb(21, 32, 43);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 57px;
+  font-weight: bold;
+  border-left: 0.5px solid rgba(247, 249, 249, 0.5);
+}
+.home-text {
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+}
+.top-stars {
+  width: 22px;
+  margin-left: 400px;
+  padding: 10px;
+  border-right: 1px solid rgba(247, 249, 249, 0.5);
+}
+.bottom-message {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  right: 5%;
+  background-color: rgb(21, 32, 43);
+  width: 200px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  width: 300px;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  box-shadow: 0px -10px 10px -10px rgba(255, 255, 255);
+}
+.message-text {
+  color: white;
+  font-weight: bold;
+}
+.right {
+  display: flex;
+  flex-direction: row;
+}
+.bottom-icons {
+  width: 24px;
+  padding: 6px;
+}
+/*.top-right-search {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+}*/
+.search-bar {
+  margin-top: 5px;
+  margin-right: 150px;
+  padding: 12px;
+  border-radius: 20px;
+  width: 250px;
+  color: white;
+  font-family: "Gantari", sans-serif;
+  background-color: rgba(247, 249, 249, 0.1);
+  outline: none;
+  border: none;
+}
+.search-bar:active {
+  border: 1px solid rgb(29, 155, 240);
+}
+.search-bar:focus {
+  border: 1px solid rgb(29, 155, 240);
+}
+.search-bar::placeholder {
+  font-family: "Gantari", sans-serif;
+  font-size: 20px;
+}
+.main-card {
+  border: solid rgba(247, 249, 249, 0.5);
+  border-width: 1px;
+  color: white;
+  width: 577px;
+  padding: 10px;
+}
+.main-card:hover {
+  background-color: rgba(247, 249, 249, 0.1);
+}
+.reply-icon {
+  width: 20px;
+  margin-right: 5px;
+  /*padding-left: 10px;*/
+}
+.retweet-icon,
+.like-icon,
+.share-icon {
+  width: 20px;
+  margin-right: 5px;
+  /*padding-left: 30px;
+  padding-top: 10px;*/
+}
+.values {
+  color: rgba(247, 249, 249, 0.5);
+}
+.card-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.card-profile-img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+.card-profile-username {
+  font-size: 14px;
+  color: rgba(247, 249, 249, 0.5);
+}
+.card-more {
+  width: 20px;
+  float: right;
+}
+.profile-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.trends-card {
+  width: 250px;
+  color: white;
+  background-color: rgb(30, 39, 50);
+  border-radius: 15px;
+}
+.trends-card-heading {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px;
+}
+.trend-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.trend {
+  padding: 20px;
+}
+.trend:hover {
+  background-color: rgba(247, 249, 249, 0.1);
+}
+main {
+  display: inline-block;
+}
+.icon-more {
+  width: 15px;
+}
+.trend-text {
+  font-weight: bold;
+}
+.trend-tweets {
+  font-size: 14px;
+  color: rgb(119, 131, 144);
+}
+.trending-in-text {
+  color: rgb(119, 131, 144);
+}
+.show-more-link {
+  color: rgb(29, 155, 240);
+  text-decoration: none;
+}
+.show-more-link:hover {
+  background-color: rgba(247, 249, 249, 0.1);
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.card-content {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.card-content:hover {
+  background-color: rgba(247, 249, 249, 0.1);
+}
+.pic {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.account-pic {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+.account-follow-btn {
+  background-color: white;
+  color: rgb(15, 20, 25);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 16px;
+  border: none;
+}
+.account-details {
+  padding-left: 10px;
+}
+.card-img-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.who-to-follow-card {
+  width: 100%;
+  color: white;
+  background-color: rgb(30, 39, 50);
+  border-radius: 15px;
+  margin-top: 50px;
+}
+.who-to-follow-title {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.right-box {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  margin-right: 90px;
+  width: 300px;
+}
+.media-icon,
+.attach-icon,
+.location-icon,
+.schedule-icon,
+.poll-icon,
+.happy-icon {
+  width: 20px;
+  padding: 4px;
+  cursor: pointer;
+}
+.icons-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 70px;
+}
+.send-tweet {
+  background-color: rgb(29, 155, 240);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+.tweet-image {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.tweet-image img {
+  width: auto;
+  height: 100%;
+}
+.img-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 28px;
+  color: white;
+}
+.tweet-box {
+  padding: 18px;
+  border: 1px solid rgba(247, 249, 249, 0.5);
+}
+.tweet-input {
+  margin-left: 20px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background-color: rgb(21, 32, 43);
+  outline: none;
+  font-size: 20px;
+  color: white;
+  font-family: "Gantari", sans-serif;
+}
+.tweet-input::before {
+  content: url("images/search.png");
+}
+.tweet-input::placeholder {
+  color: rgb(139, 152, 165);
+  font-size: 20px;
+}
+.tweeted-img {
+  width: 100%;
+}
+.icon-values {
+  display: flex;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+.card-bottom-icons {
+  display: flex;
+  flex-direction: row;
+}
+.follow-account-name {
+  font-weight: bold;
+}
+.follow-account-username {
+  color: rgba(247, 249, 249, 0.5);
+  font-size: 14px;
+}
